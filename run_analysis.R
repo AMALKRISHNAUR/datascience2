@@ -39,5 +39,5 @@ dataset.melt <-melt(dataset.filtered, id = c('activitylabel', 'subject'), measur
 dataset.tidy <- dcast(dataset.melt, activitylabel + subject ~ variable, mean)
 
 #creating a tidy dataset file  
-#write.table(dataset.tidy, file = "tidydataset.txt" ,row.names = FALSE)
-write.csv(dataset.tidy,"tidydata.csv")
+write.table(dataset.tidy, file = "tidydataset.txt" ,row.names = FALSE)
+#write.csv(dataset.tidy,"tidydata.csv")
